@@ -21,11 +21,11 @@ if (document.getElementById('formFinanciamento')) {
     }
 
     const valorLimpo = valor.replace('R$', '').replace(/\./g, '').replace(',', '.');
-    window.location.href = `simulation.html?valor=${valorLimpo}&banco=${banco}&parcelas=${parcelas}`;
+    window.location.href = `./HTML/simulation.html?valor=${valorLimpo}&banco=${banco}&parcelas=${parcelas}`;
   });
 }
 
-if (window.location.pathname.includes('simulation.html')) {
+if (window.location.pathname.includes('/HTML/simulation.html')) {
   const params = new URLSearchParams(window.location.search);
   const valor = parseFloat(params.get('valor'));
   const banco = params.get('banco');
@@ -41,7 +41,7 @@ if (window.location.pathname.includes('simulation.html')) {
     document.querySelector('.financing-info').textContent = `* Financiamento em ${parcelas} meses.`;
   } else {
     alert('Dados inválidos! Retorne ao simulador.');
-    window.location.href = 'index.html';
+    window.location.href = '/index.html';
   }
 }
 
@@ -53,5 +53,5 @@ function formatarCampo(valor) {
 }
 
 function voltarSimulador() {
-  window.location.href = 'index.html';
+  window.location.href = '../index.html';
 }

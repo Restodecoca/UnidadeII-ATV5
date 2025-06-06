@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+.web {
+  position: relative;
+  width: 1920px;
+  height: 943px;
+  background: #FFFFFF;
+}
+
+.container {
+  display: flex;
+  max-width: 100vw;
+  width: 100%;
+  background: white;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.left {
+  flex: 1;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.left h1 {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.left h1 span {
+  background: linear-gradient(88.69deg, #20C973 -11.88%, #20C9B3 105.49%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.left p {
+  color: #939393;
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+.left img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 30px;
+}
+
+.right {
+  flex: 1;
+  background: #F9F9F9;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.right h3 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #939393;
+  margin-bottom: 30px;
+  padding-right: 60px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  color: #939393;
+}
+
+.rectangle-79 {
+  box-sizing: border-box;
+  position: relative;
+  width: 384px;
+  height: 64px;
+  border: 2px solid #20C982;
+  border-radius: 7px;
+  font-size: 1em;
+  padding: 0 15px;
+  color: #939393;
+}
+
+.rectangle-79::placeholder {
+  color: #939393;
+}
+
+.rectangle-78,
+.rectangle-77 {
+  box-sizing: border-box;
+  position: relative;
+  width: 384px;
+  height: 64px;
+  border: 1px solid #D9D9D9;
+  border-radius: 7px;
+  font-size: 1em;
+  padding: 0 15px;
+  color: #939393;
+}
+
+.rectangle-76 {
+  position: relative;
+  width: 384px;
+  height: 64px;
+  background: #20C982;
+  border-radius: 7px;
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 34px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 67px;
+  font-size: 1.5em;
+  color: #20C982;
+  font-weight: bold;
+}
+
+.logo span {
+  margin-left: 8px;
+}
+
+.elipse-arrow {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  max-width: 100px;
+}
+
+.left-panel {
+  flex: 1;
+  padding: 80px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  background: white;
+}
+
+.left-panel .logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 80px;
+  position: absolute;
+  top: 60px;
+  left: 60px;
+}
+
+.left-panel .logo-icon {
+  width: 28px;
+  height: 28px;
+  background: #10b981;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.left-panel .logo-text {
+  font-size: 28px;
+  font-weight: 400;
+  color: #10b981;
+  letter-spacing: -0.5px;
+}
+
+.left-panel .content {
+  max-width: 400px;
+}
+
+.left-panel .label,
+.left-panel .final-label {
+  color: #9ca3af;
+  font-size: 16px;
+  margin-bottom: 8px;
+  font-weight: 400;
+}
+
+.left-panel .installment-value,
+.left-panel .final-value {
+  font-size: 48px;
+  font-weight: 700;
+  color: #374151;
+  margin-bottom: 50px;
+  line-height: 1.1;
+  letter-spacing: -1px;
+}
+
+.left-panel .financing-info {
+  color: #10b981;
+  font-size: 14px;
+  margin-bottom: 50px;
+  font-weight: 400;
+}
+
+.left-panel .btn-simulator {
+  background: transparent;
+  border: 1.5px solid #10b981;
+  color: #10b981;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-bottom: 100px;
+  max-width: 200px;
+}
+
+.left-panel .btn-simulator:hover {
+  background: #10b981;
+  color: white;
+}
+
+.left-panel .footer-text {
+  color: #9ca3af;
+  font-size: 13px;
+  position: absolute;
+  bottom: 60px;
+  left: 60px;
+  font-weight: 400;
+}
+
+
+.right-panel {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, rgba(16,185,129,0.8) 0%, rgba(16,185,129,0.9) 100%);
+}
+
+.right-panel .car-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.95;
+}
+
+.right-panel .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(16,185,129,0.3) 0%, rgba(16,185,129,0.1) 100%);
+}
+
+.right-panel .floating-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.right-panel .floating-icon .icon {
+  width: 50px;
+  height: 50px;
+  background: #10b981;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
